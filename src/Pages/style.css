@@ -4,12 +4,14 @@
 
   *{
     font-family: 'Mulish', sans-serif;
+    
   }
+  
 .row{
   margin: 0 !important;
 }
-.first-section{
-  margin: 3% auto;
+.section{
+  margin: 7% auto;
 }
 .align{
   display: flex !important;
@@ -41,7 +43,36 @@ align-items: center;
     font-weight: 700;
     font-size: 48px;
   }
+  .service{
+    margin: 5% auto !important;
+  }
+.card-main{
+  position: relative;
+  box-shadow: 0  2px 4px rgba(0, 0, 0, 0.2),0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 15px;
+padding: 0 40px;
+  height: 350px;
+  margin-top: 30px;
+}
+.card-head{
+  position: absolute;
+  top: 15%;
+}
+.itemPara{
+  color: #7D7987;
+  font-weight: 300;
+  position: absolute;
+width: 70%;
+  bottom: 10%;
+}
+.itemHead{
+  font-size: 24px;
+  font-weight: 700;
+  color: #000;
+  position: absolute;
 
+  bottom: 40%;
+}
 
 
   /* small screen */

@@ -11,6 +11,11 @@
 .navbar{
     padding: 0.5rem 0 !important;
 }
+.navbtn{
+border: none !important;
+background: #ffffff !important;
+color: black !important;
+}
 
 @media only screen and (max-width: 992px) {
  .nav-link{

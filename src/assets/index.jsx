@@ -1,2 +1,8 @@
 export const Logo = require('./Logo.png')
 export const heroImg = require('./heroimg.png')
+export const Search = require('./Frame.png')
+export const Drug = require('./Frame (1).png')
+export const Consult= require('./Frame (2).png')
+export const Details= require('./Frame (3).png')
+export const Care = require('./Frame (4).png')
+export const Track = require('./Frame (5).png')
