@@ -1,10 +1,11 @@
 import React from 'react';
 import { BrowserRouter,Routes, Route, Link } from 'react-router-dom';
 import Navbar from './Navigation/NavBar';
-import Footer from './Footer/Footer';
+// import Footer from './Footer/Footer';
 import Home from '../Pages/Home';
 import About from '../Pages/About';
 import Contact from '../Pages/Contact';
+import Api from './Api'
 
 
 const Display = () => {
@@ -12,12 +13,15 @@ const Display = () => {
     <div>
   <BrowserRouter>
      <Navbar />
+     <Api/>
       <Routes>
         <Route index element={<Home />}/>
         <Route path="about" element={<About />}/>
         <Route path="contact" element={<Contact />}/>
+       
      </Routes>
-     <Footer />
+     
+    
  </BrowserRouter>
 
     </div>

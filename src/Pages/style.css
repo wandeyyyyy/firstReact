@@ -1,0 +1,57 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=Mulish:wght@300;400;500;600;700&display=swap');
+
+
+  *{
+    font-family: 'Mulish', sans-serif;
+  }
+.row{
+  margin: 0 !important;
+}
+.first-section{
+  margin: 3% auto;
+}
+.align{
+  display: flex !important;
+align-items: center;
+}
+  .consult{
+    border: none;
+    border-radius: 50px ;
+    background: #458ff6;
+    color: white;
+    font-weight: 700;
+    padding: 12px 20px;
+  }
+  .hero-section{
+    margin: 8% auto;
+  }
+  .virt{
+    width: 80%;
+  }
+  .heroImg{
+    width: 100%;
+  }
+  .heroPara{
+    color: #7D7987;
+    line-height: 32px;
+    font-size: 20px;
+  }
+  .herovirtual{
+    font-weight: 700;
+    font-size: 48px;
+  }
+
+
+
+  /* small screen */
+
+  @media only screen and (max-width: 992px) {
+  .virt{
+    width: auto;
+  }
+  .herovirtual{
+    font-size: 40px;
+  }
+
+ }

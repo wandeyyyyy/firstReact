@@ -1,9 +1,17 @@
-import React from 'react'
+import React, {useState} from 'react'
 
 const About = () => {
+  const [color, setColor] = useState("blue");
+
+  
+  const changeText = () =>{
+    setColor("red")
+      }
   return (
     <div>
-        <h1>This is About Page</h1>
+      <p> i love {color}</p>
+       <button onClick={changeText}>change Me!</button>
+       
     </div>
   )
 }
