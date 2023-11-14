@@ -2,6 +2,9 @@ import React from 'react';
 import './style.css';
 import {heroImg, hero2, arrow} from '../assets' 
 import Service from '../components/Service';
+import Article from '../components/Article';
+import "react-responsive-carousel/lib/styles/carousel.min.css";
+import { Carousel } from 'react-responsive-carousel';
 
 const Home = () => {
   return (
@@ -98,6 +101,31 @@ or administrative hassle) and securely</h6>
     <div className="col-sm-12 col-md-12 col-lg-1 col-xl-1"></div>
     </div>
 </section> 
+<section>
+  <Carousel>
+    
+  </Carousel>
+</section>
+<section className='section'>
+<div className="row">
+    <div className="col-sm-12 col-md-12 col-lg-1 col-xl-1"></div>
+    <div className="col-sm-12 col-md-12 col-lg-10 col-xl-10">
+      <div>
+        <h2 className='text-center herovirtual'>Check out our latest article</h2>
+        
+        <div className='row service'>
+<Article/>
+        </div>
+        <div className='text-center'>
+        <button className='learnBtn'>Learn more</button>
+        </div>
+      </div>
+    </div>
+    <div className="col-sm-12 col-md-12 col-lg-1 col-xl-1"></div>
+    </div> 
+
+    
+</section>
    </React.Fragment>
   )
 }

@@ -44,7 +44,7 @@ const Service = () => {
 
 
     const getItem = serviceItem.map((item) =>
-    <div class="col-sm-12 col-md-12 col-lg-4">
+    <div class="col-sm-12 col-md-6 col-lg-4">
       <div key={item.id} className='card-main'>
           <div className="card-head">
               <img src={item.image} alt="" />
