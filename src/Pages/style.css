@@ -10,8 +10,18 @@
 .row{
   margin: 0 !important;
 }
+.learnBtn{
+  color: #458FF6;
+background: #ffffff;
+  font-size: 18px;
+  border:2px solid #458FF6;
+border-radius: 50px;
+  font-weight: 700;
+  padding: 12px 24px;
+  
+}
 .section{
-  margin: 7% auto;
+  margin: 5% auto;
 }
 .align{
   display: flex !important;
@@ -19,11 +29,11 @@ align-items: center;
 }
   .consult{
     border: none;
-    border-radius: 50px ;
+    border-radius: 50px;
     background: #458ff6;
     color: white;
     font-weight: 700;
-    padding: 12px 20px;
+    padding: 12px 24px;
   }
   .hero-section{
     margin: 8% auto;
@@ -37,7 +47,7 @@ align-items: center;
   .heroPara{
     color: #7D7987;
     line-height: 32px;
-    font-size: 20px;
+    font-size: 18px;
   }
   .herovirtual{
     font-weight: 700;
@@ -82,7 +92,11 @@ width: 70%;
     width: auto;
   }
   .herovirtual{
-    font-size: 40px;
+    font-size: 34px;
   }
+  br{
+    display: none;
+  }
+
 
  }
