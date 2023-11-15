@@ -34,7 +34,7 @@ const Article = () => {
           </div>
           <div className="card-art-body">
               <h4 className='artHead'>{art.heading}</h4>
-              <p className='artPara'>{art.paragraph}</p>
+              <p className='artPara mt-3'>{art.paragraph}</p>
               <button className='artBtn'>Read More <img src={arrRight} alt=""className='ml-2' /></button>
           </div>
       </div>

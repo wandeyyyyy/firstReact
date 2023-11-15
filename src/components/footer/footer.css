@@ -1,0 +1,23 @@
+footer{
+    background: linear-gradient(183deg, #67C3F3 -8.57%, #5A98F2 82.96%);  
+    color: #ffffff;
+    padding: 30px 0;
+}
+a{
+    color: #ffffff !important;
+}
+.value{
+    font-size: 16px;
+    line-height: 28px;
+ 
+}
+.footHead{
+    font-weight: 700;
+}
+li{
+    margin-top: 15px;
+}
+
+a:hover{
+    text-decoration: none !important;
+}
