@@ -30,16 +30,16 @@ for everyone</h5>
         <ul className="list-unstyled">
           
           <li>
-            <a href="#!">About us</a>
+            <a href="#!" className='footLink'>About us</a>
           </li>
           <li>
-            <a href="#!">Testimonials</a>
+            <a href="#!" className='footLink'>Testimonials</a>
           </li>
           <li>
-            <a href="#!">Find a doctor</a>
+            <a href="#!" className='footLink'>Find a doctor</a>
           </li>
           <li>
-            <a href="#!">Apps</a>
+            <a href="#!" className='footLink'>Apps</a>
           </li>
         </ul>
       </div>
@@ -51,16 +51,16 @@ for everyone</h5>
 
         <ul className="list-unstyled mb-0">
           <li>
-            <a href="#!" >Indonesia</a>
+            <a href="#!"className='footLink' >Indonesia</a>
           </li>
           <li>
-            <a href="#!" >Singapore</a>
+            <a href="#!"className='footLink' >Singapore</a>
           </li>
           <li>
-            <a href="#!" >HongKong</a>
+            <a href="#!" className='footLink'>HongKong</a>
           </li>
           <li>
-            <a href="#!" >Canada</a>
+            <a href="#!" className='footLink'>Canada</a>
           </li>
         </ul>
       </div>
@@ -70,16 +70,16 @@ for everyone</h5>
 
         <ul className="list-unstyled">
           <li>
-            <a href="#!" >Help Center</a>
+            <a href="#!"className='footLink' >Help Center</a>
           </li>
           <li>
-            <a href="#!" >Contact support</a>
+            <a href="#!" className='footLink'>Contact support</a>
           </li>
           <li>
-            <a href="#!" >Instructions</a>
+            <a href="#!" className='footLink' >Instructions</a>
           </li>
           <li>
-            <a href="#!" >How it Works</a>
+            <a href="#!"className='footLink' >How it Works</a>
           </li>
         </ul>
       </div>

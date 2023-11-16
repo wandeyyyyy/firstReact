@@ -6,9 +6,84 @@ import Article from '../components/Article';
 import Footer from '../components/Footer/Footer';
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import { Carousel } from 'react-responsive-carousel';
+import { motion } from "framer-motion"
+import { useInView } from 'react-intersection-observer';
+import { useEffect } from 'react';
+import { useAnimation } from 'framer-motion';
+
+
+
 
 const Home = () => {
+
+  const {ref, inView} = useInView({ threshold: 0.5 });
+  const animation = useAnimation();
+  const { ref: ref2, inView: inView2 } = useInView({ threshold: 0.5 });
+  const animation2 = useAnimation();
+  const { ref: ref3, inView: inView3 } = useInView({ threshold: 0.5 });
+  const animation3 = useAnimation();
+
+
+  useEffect(() => {
+        if (inView) {
+          animation.start({
+            scale: 1,
+            transition: {
+              type: 'spring',
+              duration: 2,
+              bounce: 0.3,
+            },
+          });
+        } else {
+          animation.start({
+          scale: 0.8gi,
+          transition:{
+            duration:2,
+          }
+          });
+        }
+      }, [inView, animation]);
+      useEffect(() => {
+        if (inView2) {
+          animation2.start({
+            scale: 1,
+            transition: {
+              type: 'spring',
+              duration: 2,
+              bounce: 0.3,
+            },
+          });
+        } else {
+          animation2.start({
+          scale: 0.8,
+          transition:{
+            duration:2,
+          }
+          });
+        }
+      }, [inView2, animation2]);
+      useEffect(() => {
+        if (inView3) {
+          animation3.start({
+            scale: 1,
+            transition: {
+              type: 'spring',
+              duration: 2,
+              bounce: 0.3,
+            },
+          });
+        } else {
+          animation3.start({
+          scale: 0.8,
+          transition:{
+            duration: 2,
+          }
+          });
+        }
+      }, [inView3, animation3]);
   return (
+ 
+ 
    <React.Fragment>
     <section className='section'>
     <div className="row">
@@ -27,7 +102,13 @@ for everyone</h6>
       </div>
       <div className="col-sm-12 col-md-12 col-lg-6 col-xl-6">
  
-      <img src={heroImg} alt="" className='heroImg'/>
+      <motion.div
+     ref={ref}
+     animate={animation}
+     initial={{ scale: 0.8}} 
+
+><img src={heroImg} alt="" className='heroImg'/>
+</motion.div>
       </div>
       </div>
     </div>
@@ -63,7 +144,14 @@ for everyone</h6>
     <div className="col-sm-12 col-md-12 col-lg-10 col-xl-10">
       <div className="row align align1">
       <div className="col-sm-12 col-md-12 col-lg-6 col-xl-6 hero-section">
+      <motion.div
+     ref={ref2}
+     animate={animation2}
+     initial={{ scale:0.7}} 
+
+>
       <img src={hero2} alt="" className='heroImg'/>
+      </motion.div>
       </div>
       <div className="col-sm-12 col-md-12 col-lg-6 col-xl-6">
       <div className='virt offset-xl-2'>
@@ -97,8 +185,14 @@ or administrative hassle) and securely</h6>
 </div>
       </div>
       <div className="col-sm-12 col-md-12 col-lg-6 col-xl-6">
- 
+      <motion.div
+     ref={ref3}
+     animate={animation3}
+     initial={{ scale:0.7}} 
+
+>
       <img src={heroImg} alt="" className='heroImg'/>
+      </motion.div>
       </div>
       </div>
     </div>
@@ -110,7 +204,7 @@ or administrative hassle) and securely</h6>
  
 <div className='slides'>
   <div className='say'>
-  <h2 className='text-center '>What our customers are saying</h2>
+  <h2 className='text-center'>What our customers are saying</h2>
  <div className="line bg-white"></div>
  </div>
 <div className="row mt-3">
@@ -133,11 +227,11 @@ or administrative hassle) and securely”</p>
 </div>
 </div>
 <div className='slides'>
-  <div className="say">
-  <h2 className='text-center'>What our customer are saying</h2>
-  <div className="line bg-white"></div>
-  </div>
-<div className="row">
+  <div className='say'>
+  <h2 className='text-center'>What our customers are saying</h2>
+ <div className="line bg-white"></div>
+ </div>
+<div className="row mt-3">
 <div className="col-sm-12 col-md-12 col-lg-6 col-xl-6">
   <div className='d-flex align-items-center justify-content-center d-d'>
     <img src={Man} alt="" className='man-man'/>
@@ -157,13 +251,13 @@ or administrative hassle) and securely”</p>
 </div>
 </div>
 <div className='slides'>
-  <div className="say">
-  <h2 className='text-center'>What our customer are saying</h2>
-  <div className="line bg-white"></div>
-  </div>
-<div className="row">
+  <div className='say'>
+  <h2 className='text-center'>What our customers are saying</h2>
+ <div className="line bg-white"></div>
+ </div>
+<div className="row mt-3">
 <div className="col-sm-12 col-md-12 col-lg-6 col-xl-6">
-  <div className='d-flex align-items-center justify-content-center  d-d'>
+  <div className='d-flex align-items-center justify-content-center d-d'>
     <img src={Man} alt="" className='man-man'/>
     <div className='founder'>
       <h5 className='edward'>Edward Newgate</h5>
@@ -180,6 +274,7 @@ or administrative hassle) and securely”</p>
 </div>
 </div>
 </div>
+
 
   
    
