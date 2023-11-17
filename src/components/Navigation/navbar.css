@@ -1,3 +1,14 @@
+
+  
+  .navbar-show {
+    top: 0;
+
+  }
+  
+  .navbar-hide {
+    top: -100px;
+  }
+  
 .nav-link{
     font-weight: 700;
     color: #1f1534;
@@ -9,8 +20,15 @@
     opacity: 1;
 }
 .navbar{
-    padding: 0.5rem 0 !important;
+    padding: 0.5rem !important;
+    transition: top 0.3s ease-in-out;
+    z-index: 1000;
+    background: #ffffff;
+ position: fixed !important;
+ width: 82%;
+   
 }
+
 .navbtn{
 border: none !important;
 background: #ffffff !important;
@@ -21,4 +39,7 @@ color: black !important;
  .nav-link{
     margin-left:0;
  }   
+ .navbar{
+    width: 96%;
+ }
 }

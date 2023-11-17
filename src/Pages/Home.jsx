@@ -1,6 +1,6 @@
 import React from 'react';
 import './style.css';
-import {heroImg, hero2, arrow, Man} from '../assets' 
+import {heroImg, hero2, arrow, Man, MySvg} from '../assets' 
 import Service from '../components/Service';
 import Article from '../components/Article';
 import Footer from '../components/Footer/Footer';
@@ -36,7 +36,7 @@ const Home = () => {
           });
         } else {
           animation.start({
-          scale: 0.8gi,
+          scale: 0.8,
           transition:{
             duration:2,
           }
@@ -279,7 +279,7 @@ or administrative hassle) and securely”</p>
   
    
   </Carousel>
-
+  <img src={MySvg} alt="" />
 <section className='section'>
 <div className="row">
     <div className="col-sm-12 col-md-12 col-lg-1 col-xl-1"></div>
