@@ -25,6 +25,7 @@ import { faList } from '@fortawesome/free-solid-svg-icons'
   }, [prevScrollPos]);
   return(
    <React.Fragment>
+   
     <div className="row">
       <div className="col-sm-12 col-md-12 col-lg-1 col-xl-1"></div>
       <div className="col-sm-12 col-md-12 col-lg-10 col-xl-10">
@@ -61,6 +62,7 @@ import { faList } from '@fortawesome/free-solid-svg-icons'
 </div>
 <div className="col-sm-12 col-md-12 col-lg-1 col-xl-1"></div>
 </div>
+
    </React.Fragment>
 
   )

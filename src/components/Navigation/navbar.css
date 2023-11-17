@@ -21,17 +21,16 @@
 }
 .navbar{
     padding: 0.5rem !important;
-    transition: top 0.3s ease-in-out;
+    transition: 0.3s ease-in;
     z-index: 1000;
-    background: #ffffff;
  position: fixed !important;
  width: 82%;
-   
+   background: #ffffff;
 }
 
 .navbtn{
 border: none !important;
-background: #ffffff !important;
+background: none !important;
 color: black !important;
 }
 
@@ -40,6 +39,6 @@ color: black !important;
     margin-left:0;
  }   
  .navbar{
-    width: 96%;
+    width: 92%;
  }
 }
