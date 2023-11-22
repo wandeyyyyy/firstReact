@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import './style.css';
 import {heroImg, hero2, arrow, Man, MySvg} from '../assets' 
 import Service from '../components/Service';
@@ -6,10 +6,10 @@ import Article from '../components/Article';
 import Footer from '../components/Footer/Footer';
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import { Carousel } from 'react-responsive-carousel';
-import { motion } from "framer-motion"
+import { motion, useAnimation } from "framer-motion"
 import { useInView } from 'react-intersection-observer';
-import { useEffect } from 'react';
-import { useAnimation } from 'framer-motion';
+
+
 
 
 
@@ -85,7 +85,7 @@ const Home = () => {
  
  
    <React.Fragment>
-    <section className='section'>
+    <section className='section section1'>
     <div className="row">
     <div className="col-sm-12 col-md-12 col-lg-1 col-xl-1"></div>
     <div className="col-sm-12 col-md-12 col-lg-10 col-xl-10">
@@ -115,7 +115,7 @@ for everyone</h6>
     <div className="col-sm-12 col-md-12 col-lg-1 col-xl-1"></div>
     </div>
 </section> 
-<section className='section'>
+<section className='section othersection'>
 <div className="row">
     <div className="col-sm-12 col-md-12 col-lg-1 col-xl-1"></div>
     <div className="col-sm-12 col-md-12 col-lg-10 col-xl-10">
@@ -138,7 +138,7 @@ for everyone</h6>
 
     
 </section>
-<section className='section'>
+<section className='section othersection'>
     <div className="row">
     <div className="col-sm-12 col-md-12 col-lg-1 col-xl-1"></div>
     <div className="col-sm-12 col-md-12 col-lg-10 col-xl-10">
@@ -168,7 +168,7 @@ in the solutions we deliver</h6>
     <div className="col-sm-12 col-md-12 col-lg-1 col-xl-1"></div>
     </div>
 </section>
-<section className='section'>
+<section className='section othersection'>
     <div className="row">
     <div className="col-sm-12 col-md-12 col-lg-1 col-xl-1"></div>
     <div className="col-sm-12 col-md-12 col-lg-10 col-xl-10">
@@ -279,8 +279,8 @@ or administrative hassle) and securely”</p>
   
    
   </Carousel>
-  <img src={MySvg} alt="" />
-<section className='section'>
+  {/* <img src={MySvg} alt="" /> */}
+<section className='section othersection'>
 <div className="row">
     <div className="col-sm-12 col-md-12 col-lg-1 col-xl-1"></div>
     <div className="col-sm-12 col-md-12 col-lg-10 col-xl-10">

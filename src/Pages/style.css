@@ -195,6 +195,10 @@ margin: 22px 0;
   .slides{
     padding: 100px 5px;
   }
+  .section1, .othersection{
+    margin: 12% 0;
+  }
+ 
  
   .slidePara{
     margin-top: 30px;

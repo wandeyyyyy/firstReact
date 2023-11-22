@@ -18,7 +18,7 @@ import { faList } from '@fortawesome/free-solid-svg-icons'
     };
 
     window.addEventListener('scroll', handleScroll);
-
+ 
     return () => {
       window.removeEventListener('scroll', handleScroll);
     };

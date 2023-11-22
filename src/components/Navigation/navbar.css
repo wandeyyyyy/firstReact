@@ -32,7 +32,7 @@
 border: none !important;
 background: none !important;
 color: black !important;
-}
+}  
 
 @media only screen and (max-width: 992px) {
  .nav-link{
@@ -40,5 +40,15 @@ color: black !important;
  }   
  .navbar{
     width: 92%;
+
  }
+
+
+.navbar-hide {
+top: 0;
+
+}
+   
+
+
 }
